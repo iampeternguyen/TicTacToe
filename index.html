@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+
+  <title>TicTacToe</title>
+
+  <!-- <link rel="stylesheet" href="css/resetCSS.css?v=1.0"> -->
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</head>
+
+<body>
+  <div class="container text-center">
+    <h2 class="text-center">Tic Tac Toe</h2>
+    <div id="start">
+      Choose Xs or Os to begin.<br>
+      <button class="btn btn-default" onclick="setUser(0)">X</button>
+      <button class="btn btn-default" onclick="setUser(1)">O</button>
+
+    </div>
+    <div id="winner"></div>
+      <table class="board">
+        <tr>
+          <td id="box1" onclick="placeMark.call(player, 1)">
+          </td>
+          <td id="box2" onclick="placeMark.call(player, 2)" class="vert-mid">
+          </td>
+          <td id="box3" onclick="placeMark.call(player, 3)">
+          </td>
+        </tr>
+        <tr>
+          <td id="box4" onclick="placeMark.call(player, 4)" class="hor-mid">
+          </td>
+          <td id="box5" onclick="placeMark.call(player, 5)" class="vert-mid hor-mid">
+          </td>
+          <td id="box6" onclick="placeMark.call(player, 6)" class="hor-mid">
+          </td>
+        </tr>
+        <tr>
+          <td id="box7" onclick="placeMark.call(player, 7)">
+          </td>
+          <td id="box8" onclick="placeMark.call(player, 8)" class="vert-mid">
+          </td>
+          <td id="box9" onclick="placeMark.call(player, 9)">
+          </td>
+        </tr>
+      </table>
+  </div>
+</body>
+</html>

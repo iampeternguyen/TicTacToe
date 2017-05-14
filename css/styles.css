@@ -1,0 +1,27 @@
+/* Styling the board */
+
+td {
+  max-width: 100px;
+  max-height: 100px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 300%;
+}
+
+.vert-mid {
+  border-left: thick solid #000;
+  border-right: thick solid #000;
+}
+
+.hor-mid {
+  border-top: thick solid #000;
+  border-bottom: thick solid #000;
+}
+
+.board {
+  margin: 30px auto;
+}
+.container {
+  padding-top: 50px;
+}
