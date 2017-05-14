@@ -58,14 +58,17 @@ function placeMark (loc) {
     if (board[loc] === "") {
       if (this.mark == 'x') {
         $('#box' + loc).css("visibility", "hidden");
+        $('#box' + loc).css("font-size", "250%");
         $('#box' + loc).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
-        $('#box' + loc).html("X");
+        $('#box' + loc).html("╳");
         board[loc] = 'x';
       }
       else if (this.mark == 'o') {
         $('#box' + loc).css("visibility", "hidden");
+        $('#box' + loc).css("font-size", "300%");
+
         $('#box' + loc).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
-        $('#box' + loc).html("O");
+        $('#box' + loc).html("◯");
         board[loc] = 'o';
       }
       played.push(loc);
